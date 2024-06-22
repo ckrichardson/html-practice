@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="https://stackoverflow.com/" />
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <div id="base-content-wrapper">
+      <h1>Base</h1>
+      <p>
+        The <code>&lt;base&gt;</code> element is used to specify the base URL
+        for all relative URLs
+      </p>
+
+      <p>To refresh your memory, here are a couple examples of absolute URLs</p>
+      <p><code>https://www.google.com</code></p>
+      <p><code>https://www.github.com</code></p>
+
+      <p>Here are a couple examples of relative URLs</p>
+      <p><code>./picture.png</code></p>
+      <p><code>./content/cat</code></p>
+
+      <p>
+        An important note about the <code>&lt;base&gt;</code> element is that it
+        must be included in the <code>&lt;head&gt;</code> element of the HTML
+        document
+      </p>
+
+      <p>This document has the base set to <code>stackoverflow.com</code></p>
+      <p>
+        Then we create a link with a relative URL to a stackoverflow article
+        which is relevant to the <code>&lt;base&gt;</code> element
+      </p>
+
+      <div id="stackoverflow-link-container">
+        <a
+          href="./questions/1889076/what-are-the-recommendations-for-html-base-tag"
+          target="_blank"
+          >./questions/1889076/what-are-the-recommendations-for-html-base-tag</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
