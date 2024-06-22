@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="audio.css" />
+  </head>
+  <body>
+    <div id="audio-content-wrapper">
+      <h1 id="kncj-header">KNCJ</h1>
+
+      <!-- Uncomment the one below you would like to test -->
+      <!-- Preload will load the stream for all players -->
+      <!-- This makes it difficult to test each one with the same stream source -->
+
+      <!-- <div id="regular-player">
+        <div>Regular Player</div>
+        <audio
+          id="kncj-audio-stream"
+          controls
+          src="https://kncjstream.com:8443/live"
+        ></audio>
+      </div>
+
+      <div id="preloaded-metadata-player">
+        <div>Player with Metadata Preload</div>
+        <audio
+          id="kncj-audio-stream"
+          controls
+          preload="metadata"
+          src="https://kncjstream.com:8443/live"
+        ></audio>
+      </div> -->
+
+      <div id="preloaded-player">
+        <div>Player with Full Preload</div>
+        <br />
+        <div><i>Notice how the page takes longer to load</i></div>
+        <div>
+          <i
+            >Also, the player is available immediately after page is done
+            loading</i
+          >
+        </div>
+        <audio
+          id="kncj-audio-stream"
+          controls
+          preload="auto"
+          src="https://kncjstream.com:8443/live"
+        ></audio>
+      </div>
+    </div>
+  </body>
+</html>
