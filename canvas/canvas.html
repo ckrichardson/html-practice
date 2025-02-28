@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./canvas.css" />
+  </head>
+  <body>
+    <p>This is a demonstration of the <code>canvas</code> element</p>
+    <p>
+      The <code>canvas</code> element is an element that can be used to draw
+      images and animations
+    </p>
+    <p>Here is an example of the element:</p>
+    <canvas></canvas>
+
+    <script>
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      // Add a rectangle at (10, 10) with size 100x100 pixels
+      ctx.fillRect(10, 10, 100, 100);
+    </script>
+  </body>
+</html>
